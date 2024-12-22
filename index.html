@@ -29,7 +29,7 @@
 </head>
 <body>
     <h1>Poll a Eliminazione Diretta</h1>
-    <p>Vota tra le opzioni fino a determinare il vincitore!</p>
+    <p>Vota tra i nomi fino a determinare il tuo preferito!</p>
 
     <div id="poll-container">
         <button class="choice-button" id="choice1"></button>
@@ -39,8 +39,14 @@
     <div id="winner" style="display: none;">Il vincitore è: </div>
 
     <script>
-        // Lista predefinita degli elementi
-        const items = ["Pizza", "Pasta", "Sushi", "Burger", "Gelato", "Tacos"];
+        // Lista predefinita dei nomi
+        const items = [
+            "Glorybound", "Tilesdoom", "Eternal Colosseum", "Blood and Valor", 
+            "Arena Legends", "Valorforge", "The Last Stand", "Crucible Arena", 
+            "Battlespire", "Eternal Trial", "Eternal Crucible", "Godforge", 
+            "Mythforge", "Godspire", "Heavenforge", "Jotunspire", 
+            "Eternal Pantheon", "Erebarch", "Helspire", "Vestfall", "Erebus Rise"
+        ];
         let index = 0;
 
         const choice1 = document.getElementById('choice1');
