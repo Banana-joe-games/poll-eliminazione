@@ -29,7 +29,7 @@
 </head>
 <body>
     <h1>Poll a Eliminazione Diretta</h1>
-    <p>Scegli tra le opzioni fino a determinare un vincitore!</p>
+    <p>Vota tra le opzioni fino a determinare il vincitore!</p>
 
     <div id="poll-container">
         <button class="choice-button" id="choice1"></button>
@@ -39,7 +39,8 @@
     <div id="winner" style="display: none;">Il vincitore è: </div>
 
     <script>
-        const items = prompt("Inserisci una lista di elementi separati da virgola:").split(",");
+        // Lista predefinita degli elementi
+        const items = ["Pizza", "Pasta", "Sushi", "Burger", "Gelato", "Tacos"];
         let index = 0;
 
         const choice1 = document.getElementById('choice1');
